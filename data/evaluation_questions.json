@@ -1,0 +1,106 @@
+[
+  {
+    "id": "Q01",
+    "question": "Can an individual apply for this grant?",
+    "expected_facts": [
+      "Individuals are not eligible",
+      "Applicants must be incorporated Australian organisations"
+    ],
+    "category": "eligibility"
+  },
+  {
+    "id": "Q02",
+    "question": "Who can approve a grant application for $80,000?",
+    "expected_facts": [
+      "The Program Manager may approve applications of $100,000 or less"
+    ],
+    "category": "approval"
+  },
+  {
+    "id": "Q03",
+    "question": "Who approves an application for $180,000?",
+    "expected_facts": [
+      "Applications above $100,000 and up to $250,000 require approval from the Program Director"
+    ],
+    "category": "approval"
+  },
+  {
+    "id": "Q04",
+    "question": "Can an application for $300,000 be approved by the Program Director?",
+    "expected_facts": [
+      "Applications above $250,000 are not eligible"
+    ],
+    "category": "boundary_condition"
+  },
+  {
+    "id": "Q05",
+    "question": "What happens if an applicant forgets to provide evidence of incorporation?",
+    "expected_facts": [
+      "The application must not proceed to full assessment",
+      "The applicant may be contacted once",
+      "The applicant has 10 business days to provide the missing documentation",
+      "The application must be closed as incomplete if the documentation is not provided"
+    ],
+    "category": "conditional_procedure"
+  },
+  {
+    "id": "Q06",
+    "question": "Can an assessor score an application if their close friend works for the applicant organisation?",
+    "expected_facts": [
+      "Assessors must declare actual, potential or perceived conflicts of interest",
+      "An assessor with a conflict must not participate in scoring or recommending the application"
+    ],
+    "category": "conflict_of_interest"
+  },
+  {
+    "id": "Q07",
+    "question": "How many assessors must assess each eligible application?",
+    "expected_facts": [
+      "Two assessors"
+    ],
+    "category": "factual_retrieval"
+  },
+  {
+    "id": "Q08",
+    "question": "Can the same officer assess and approve the same application?",
+    "expected_facts": [
+      "No officer may approve an application they personally assessed"
+    ],
+    "category": "segregation_of_duties"
+  },
+  {
+    "id": "Q09",
+    "question": "What information must unsuccessful applicants receive?",
+    "expected_facts": [
+      "Written notification",
+      "The outcome of the application",
+      "A brief explanation of the main reasons for the decision"
+    ],
+    "category": "notification"
+  },
+  {
+    "id": "Q10",
+    "question": "How long does an applicant have to lodge an appeal?",
+    "expected_facts": [
+      "The procedure does not establish an internal appeal process",
+      "Applicants may request clarification but this is not a formal review or appeal"
+    ],
+    "category": "unsupported_assumption"
+  },
+  {
+    "id": "Q11",
+    "question": "Can the Program Director waive the requirement for an Australian Business Number?",
+    "expected_facts": [
+      "The procedure does not provide a waiver mechanism for the Australian Business Number requirement"
+    ],
+    "category": "hallucination_resistance"
+  },
+  {
+    "id": "Q12",
+    "question": "Where should conflict-of-interest declarations and assessment comments be stored?",
+    "expected_facts": [
+      "They must be retained in the official grants management system"
+    ],
+    "category": "recordkeeping"
+  }
+]

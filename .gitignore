@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+
+# Secrets
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Pytest
+.pytest_cache/
+
+# Generated evaluation outputs
+outputs/
