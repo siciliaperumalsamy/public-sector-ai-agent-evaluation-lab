@@ -14,3 +14,6 @@ __pycache__/
 
 # Generated evaluation outputs
 outputs/
+
+# Public source documents downloaded locally
+data/measles_cdna_song.pdf

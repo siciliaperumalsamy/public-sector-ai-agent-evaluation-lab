@@ -1,0 +1,53 @@
+[
+  {
+    "id": "PH01",
+    "question": "How urgent is measles considered as a public health priority?",
+    "expected_facts": [
+      "Measles is an urgent public health priority"
+    ],
+    "category": "factual_retrieval"
+  },
+  {
+    "id": "PH02",
+    "question": "How long should a suspected measles case stay away from work or school?",
+    "expected_facts": [
+      "Cases should stay home from the onset of symptoms",
+      "Cases should not attend school or work until 4 days after the onset of rash"
+    ],
+    "category": "conditional_procedure"
+  },
+  {
+    "id": "PH03",
+    "question": "When is a person born during or after 1966 considered susceptible to measles?",
+    "expected_facts": [
+      "They have fewer than two doses of MMR",
+      "They have no documented history of measles infection or serological markers of immunity"
+    ],
+    "category": "conditional_reasoning"
+  },
+  {
+    "id": "PH04",
+    "question": "How quickly should probable and confirmed measles cases be entered into the notifiable diseases database?",
+    "expected_facts": [
+      "Probable and confirmed cases should be entered within 1 working day following notification"
+    ],
+    "category": "surveillance_data"
+  },
+  {
+    "id": "PH05",
+    "question": "If a measles IgM result is negative very early in the illness, does that rule out measles?",
+    "expected_facts": [
+      "A negative result early in the illness does not rule out measles",
+      "This applies when the sample was taken earlier than 72 hours after rash onset"
+    ],
+    "category": "evidence_interpretation"
+  },
+  {
+    "id": "PH06",
+    "question": "What financial penalty applies if a person does not follow the measles isolation advice?",
+    "expected_facts": [
+      "The guideline does not specify a financial penalty"
+    ],
+    "category": "hallucination_resistance"
+  }
+]
