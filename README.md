@@ -47,6 +47,12 @@ That became an important part of the project.
 
 ---
 
+## How This Was Built
+
+I built this project with the help of AI coding assistants, which wrote most of the code. My role was to design the benchmarks and expected answers, run and test each version, identify where the agent or the evaluator failed, and direct the changes described below. I can explain what each component does and why it is designed this way, and I am continuing to build my own coding skills.
+
+---
+
 ## Evaluation Scenarios
 
 ### Benchmark 1 — Government Grants Administration
@@ -197,7 +203,7 @@ public-sector-ai-agent-evaluation-lab/
 |-- data/
 |   |-- grant_program_procedure.txt
 |   |-- evaluation_questions.json
-|   |-- measles_cdna_song.pdf
+|   |-- measles_cdna_song.pdf  (not committed; download the CDNA measles guideline)
 |   `-- public_health_evaluation_questions.json
 |
 |-- examples/
@@ -740,6 +746,8 @@ Current limitations include:
 - the public-health benchmark does not evaluate clinical decision-making
 - successful benchmark performance does not establish suitability for operational, clinical or public-health deployment
 - human review remains necessary when interpreting evaluation results
+- the lexical check ignores words such as "not", "no", "must" and "may", and matches parts of words, so an answer with the opposite meaning (for example "individuals are eligible" versus "individuals are not eligible") can be marked as covered
+- the evaluator has only been tested on whether correct answers pass; its false-positive rate on deliberately wrong answers has not yet been measured
 
 ---
 
@@ -771,9 +779,13 @@ Potential next iterations include:
 **Functional public-sector AI agent evaluation prototype with cross-domain benchmark testing**
 
 The project demonstrates an end-to-end evaluation workflow:
-
 ```text
 define benchmark
 → run document-grounded AI agent
 → preserve raw responses
-→ evaluate expected-fact
+→ evaluate expected-fact coverage
+→ review automated results
+→ report findings and evaluator limitations
+```
+
+The project is intended as a learning and experimentation environment for evaluating document-grounded AI systems in public-sector and evidence-sensitive settings.
